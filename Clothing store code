@@ -1,0 +1,17 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, sold INTEGER,popularity INTEGER);
+INSERT INTO clothing VALUES (1, "t-shirt",10,5,10,1);
+INSERT INTO clothing VALUES (2, "pants", 10,15,6,2);
+INSERT INTO clothing VALUES (3,"undergarments", 10,5,5,3);
+INSERT INTO clothing VALUES(4, "accessories",10,2,4,3);
+INSERT INTO clothing VALUES(5, "Jackets",10,20,3,4);
+SELECT * FROM clothing WHERE price ORDER BY sold asc;
+SELECT SUM(sold) FROM clothing; SELECT MAX(sold) FROM clothing;
+
+SELECT name, price, popularity
+FROM clothing
+order by popularity desc; 
+
+--what are the most popular items? 
+SELECT name, price, popularity
+FROM clothing
+order by popularity desc; 
